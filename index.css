@@ -9,7 +9,7 @@
 [x-cloak] { display: none; }
 
 h1 {
-    @apply text-theme leading-normal font-bold text-3xl;
+    @apply text-theme opacity-90 leading-normal font-bold text-3xl;
 }
 
 h2 {
@@ -91,7 +91,11 @@ section > div {
 }
 
 .menu ul li {
-    @apply p-4;
+    @apply p-4 text-theme;
+}
+
+.menu ul li.active {
+    @apply font-bold;
 }
 
 .bg-image {
