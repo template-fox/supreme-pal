@@ -7,10 +7,10 @@
 	<title>Home Page</title>
 </head>
 
-<body>
+<body class="min-h-screen bg-background flex flex-col">
 
 	<section>
-		<div>
+		<div class="flex-normal">
 			<h1>Supreme</h1>
 			<div class="menu">
 				<ul>
@@ -27,34 +27,44 @@
 		</div>
 	</section>
 
-	<section>
-		<h2>Send money abroad faster</h2>
-		<div>
-			<div>
-				<label for="amount">amount</label>
-				<input type="number">
+	<section class="flex-grow flex ">
+		<div class=" flex-grow   flex items-center bg-image  flex bg-no-repeat" style="background-size: 700px; background-position:  center right;">
+			<div class="flex flex-col ">
+				<h2 class="my-8 mb-16 w-full text-5xl max-w-md">Send money abroad faster</h2>
+				<div class="w-full">
+					<div class="flex bg-white max-w-md p-4 py-2 rounded-lg shadow mb-16">
+						<div class="flex flex-col">
+							<label for="amount" class="text-focused">Amount</label>
+							<input type="text" class="pl-0 max-w-[10rem] p-0" value="400,000">
+						</div>
+						<div class="flex items-center">
+							<div class="border-r-2">&nbsp</div>
+						</div>
+						<div class="flex items-center">
+							<select name="" class="px-8 bg-white text-focused text-xl py-2" id="">
+								<option value="USD">USD</option>
+							</select>
+						</div>
+						<div class="w-36 pl-3 flex items-center "><button class="theme w-full  rounded-lg ">Send Now</button></div>
+					</div>
+				</div>	
+				<div class="grid grid-cols-1  md:grid-cols-2 max-w-xl">
+					<div>
+						<i class="material-icons">money</i>
+						<h4 class="mb-4 text-lg">Send money in minutes</h4>
+						<p class="leading-loose">You can create a transaction in a few minutes with our safety system.</p>
+						<a href="View more"></a>
+					</div>
+					<div>
+						<i class="material-icons"></i>
+						<h4 class="mb-4 text-lg">Receive cryptocurrencies</h4>
+						<p class="leading-loose">You can easily receive and send Bitcoin and Etherium</p>
+						<a href="View more"></a>
+					</div>
+				</div>
 			</div>
-			<div>
-				<select name="" id="">
-					<option value="USD">USD</option>
-				</select>
-			</div>
-			<div><button class="theme rounded-lg h-8"></button></div>
 		</div>
-		<div>
-			<div>
-				<i class="material-icons"></i>
-				<h4>Send money in minutes</h4>
-				<p>ou can create a transaction in a few minutes with our safety system.</p>
-				<a href="View more"></a>
-			</div>
-			<div>
-				<i class="material-icons"></i>
-				<h4>Receive cryptocurrencies</h4>
-				<p>You can easily receive and send Bitcoin and Etherium</p>
-				<a href="View more"></a>
-			</div>
-		</div>
+
 	</section>
 
 	<div id="fb-root"></div>

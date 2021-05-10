@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: colors.blueGray[50],
+        background: colors.blueGray[100],
         theme: colors.blueGray[800],
         focused: colors.blueGray[600],
         light: colors.blueGray[500],

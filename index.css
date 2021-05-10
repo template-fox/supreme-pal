@@ -8,6 +8,10 @@
 
 [x-cloak] { display: none; }
 
+h1 {
+    @apply text-theme leading-normal font-bold text-3xl;
+}
+
 h2 {
     @apply text-focused leading-normal  font-bold text-4xl;
 }
@@ -46,7 +50,7 @@ input {
 
 
 button.theme {
-    @apply bg-theme text-lightest p-2 rounded-full px-4 hover:bg-lighter hover:border hover:border-theme hover:text-theme;
+    @apply bg-theme text-lightest p-2 px-4 hover:bg-lighter hover:border hover:border-theme hover:text-theme;
 }
 
 p {
@@ -57,7 +61,7 @@ section {
     @apply py-4;
 }
 
-section > div{
+section > div {
     @apply max-w-6xl mx-auto px-8;
 }
 
@@ -82,6 +86,14 @@ section > div{
     @apply text-lighter;
 }
 
-.menu {
-    
+.menu ul {
+    @apply flex;
+}
+
+.menu ul li {
+    @apply p-4;
+}
+
+.bg-image {
+    background-image: url(/images/bg-main-image.png)
 }
